@@ -4,6 +4,3 @@ const userInput = readline.createInterface({input, output});
 
 
 let jeGetal1 = parseFloat(await userInput.question('Geef een getal in:'));
-let gemiddelde = 0;
-
-gemiddelde += jeGetal1;
