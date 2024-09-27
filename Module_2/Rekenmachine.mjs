@@ -38,10 +38,13 @@ switch(rekenen)
         break;
 
      case "4":
+            if(Getal1 == 0 || Getal2 ==0 )
+            {console.log("je mag niet door 0 delen");}
+            else{
            resultaat = Getal1 / Getal2;
            console.log(resultaat);
          break;
-
+            }
        default:
        console.log("Berekening niet mogelijk");
 
