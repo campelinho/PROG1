@@ -9,6 +9,7 @@ let getal = parseFloat(await userInput.question('Geef een getal:'));
  
     for(let i = 2; i<= getal/2;i++)
     {
+        console.log(i);
         if(getal%i==0)
         {
             console.log("Het getal " + getal + " is geen priemgetal");
