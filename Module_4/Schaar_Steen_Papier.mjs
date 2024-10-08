@@ -7,7 +7,7 @@ const userInput = readline.createInterface({input, output});
 let choices = ['steen', 'papier', 'schaar'];
 let computerChoice = choices[Math.floor(Math.random()*choices.length)];
 
-let keuze = await userInput.question("Kies uit schaar steen of papier ");
+let keuze = await userInput.question("Kies uit schaar steen of papier: ");
 
 
 let resultaat;
@@ -19,52 +19,55 @@ console.log("jij hebt hetzelfde gekozen, probeer het opnieuw ");
 }
 
 
-else if(computerChoice == 'steen')
-{
-resultaat = (keuze == 'schaar'); 
-console.log(computerChoice + " you lose");
-}
-
-
-else if(computerChoice == 'schaar')
-{
-resultaat = (keuze == 'papier'); 
-console.log(computerChoice + " you lose");
-}
-
-else if(computerChoice == 'papier')
-{
-resultaat = keuze == 'steen'; 
-console.log(computerChoice + " you lose");
-}
-
-
-
-
-
-else if(computerChoice == 'steen')
+else if(computerChoice == 'steen'&& keuze == 'papier'  )
     {
-    resultaat = (keuze == 'papier'); 
+        
     console.log(computerChoice + " you win");
     }
     
-    
-    else if(computerChoice == 'schaar')
+
+    else if(computerChoice == 'steen' && keuze == 'schaar')
     {
-    resultaat = (keuze == 'steen'); 
+        
+    console.log(computerChoice + " you lose");
+    }
+
+
+
+    
+    else if(computerChoice == 'schaar'&& keuze == 'steen' )
+    {
+        
     console.log(computerChoice + " you win");
     }
-    
-    else if(computerChoice == 'papier')
+
+    else if(computerChoice == 'schaar'&& keuze == 'papier')
     {
-    resultaat = keuze == 'schaar'; 
+        
+    console.log(computerChoice + " you lose");
+    }
+
+
+
+    
+    else if(computerChoice == 'papier'&& keuze == 'schaar' )
+    {
+        
     console.log(computerChoice + " you win");
     }
-    
-    else
+
+    else if(computerChoice == 'papier'&& keuze == 'steen')
     {
-        console.log("invalid choice")
+        
+    console.log(computerChoice + " you lose");
     }
+
+
+
+        else
+        {
+            console.log("invalid choice")
+        }
 
 
 process.exit();
