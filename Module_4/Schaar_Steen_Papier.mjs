@@ -69,5 +69,4 @@ else if(computerChoice == 'steen'&& keuze == 'papier'  )
             console.log("invalid choice")
         }
 
-
 process.exit();
