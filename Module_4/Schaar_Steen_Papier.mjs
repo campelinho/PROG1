@@ -10,7 +10,7 @@ let computerChoice = choices[Math.floor(Math.random()*choices.length)];
 let keuze = await userInput.question("Kies uit schaar steen of papier: ");
 
 
-let resultaat;
+
 
 
 if(keuze == computerChoice)
