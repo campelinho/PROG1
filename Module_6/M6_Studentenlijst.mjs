@@ -15,10 +15,13 @@ do
 while(naam != "S")
 {
     namen.push(naam);
-    console.log(namen);
+    
 
        if (naam === 'S')
 {
-        process.exit();
+       console.log(namen); 
+       
+       
 }
-}
+
+}process.exit();
